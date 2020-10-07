@@ -6,6 +6,12 @@
 //! allows exporting of rust to C via FFI a whole lot easier when the
 //! library needs to keep track of states.
 //!
+//! #### NOTE
+//! It is still up to you to use the data inside the instance safely. The
+//! data inside the instance is not thread safe unless you make it thread
+//! safe.
+//!
+//!
 //! ```rust
 //! #[macro_use]
 //! use static_instance::{Instance, New};
