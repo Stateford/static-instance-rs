@@ -68,7 +68,7 @@ pub trait Instance: New + Clone {
     fn instance() -> Self;
 }
 
-#[allow(unused_macros)]
+#[macro_export]
 macro_rules! CreateInstance {
     ($name:ident) => {
         impl Instance for $name {
