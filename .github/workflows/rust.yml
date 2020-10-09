@@ -26,7 +26,4 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       run: |
           cargo login ${{ secrets.CARGO_SECRET }}
-          VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
-          [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
-          sed -i "s/^version.*/version = \"$VERSION\"/" Cargo.toml
           cargo publish

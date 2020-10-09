@@ -1,6 +1,6 @@
 [package]
 name = "static-instance"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Dimitri Apostal <japostal@gmail.com>"]
 edition = "2018"
 repository = "https://github.com/Stateford/static-instance-rs"
