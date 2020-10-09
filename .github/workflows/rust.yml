@@ -27,6 +27,7 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: build
         run: cargo build --release
       - name: login
