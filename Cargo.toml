@@ -1,8 +1,17 @@
 [package]
 name = "static-instance"
 version = "0.1.0"
-authors = ["Dimitri Apostal <idietmoran@gmail.com>"]
+authors = ["Dimitri Apostal <japostal@gmail.com>"]
 edition = "2018"
+repository = "https://github.com/Stateford/static-instance-rs"
+description = "Create mutable static instances of an object"
+readme = "README.md"
+license = "MIT"
+keywords = ["static", "instance", "globals"]
+
+exclude = [
+    ".github/"
+]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
